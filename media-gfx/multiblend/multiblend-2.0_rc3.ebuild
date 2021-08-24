@@ -29,5 +29,4 @@ src_compile() {
 
 src_install() {
 	dobin ${PN}
-	dodoc changelog.txt readme.txt
 }
