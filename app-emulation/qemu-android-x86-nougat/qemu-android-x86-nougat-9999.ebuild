@@ -16,12 +16,13 @@ SLOT="0"
 IUSE="+rwsystem +gtk"
 
 
-RDEPEND=""
+RDEPEND="
+app-emulation/qemu[qemu_softmmu_targets_x86_64,qemu_user_targets_x86_64,virtfs,virgl,sdl,sdl-image,virtfs,vhost-net]
+gtk? ( gnome-extra/zenity  )
+"
 DEPEND="${RDEPEND}"
 BDEPEND="
-app-emulation/qemu[qemu_softmmu_targets_x86_64,qemu_user_targets_x86_64,virtfs,virgl,sdl,sdl-image,virtfs,vhost-net]
 rwsystem? ( sys-fs/squashfs-tools )
-gtk? ( gnome-extra/zenity  )
 "
 
 src_unpack() {
