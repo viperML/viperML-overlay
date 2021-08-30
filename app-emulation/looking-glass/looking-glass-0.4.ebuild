@@ -45,6 +45,8 @@ Icon=looking-glass" | tee looking-glass.desktop
 
 	insinto /usr/share/applications
 	doins looking-glass.desktop
+
+	elog "Installed .desktop file for your convenience. Default behaviour is CapsLock as modifier key."
 }
 
 pkg_postinst() {
