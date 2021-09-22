@@ -9,11 +9,10 @@ DESCRIPTION="Modern graphical system monitor for any panel"
 HOMEPAGE="https://github.com/udda/multiload-ng"
 
 EGIT_REPO_URI="git://github.com/udda/multiload-ng.git"
-KEYWORDS="~amd64 ~x86"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="-debug +autostart -experimental gtk2 +gtk3 -awn +indicator +lxde +mate +standalone +systray +xfce4"
+IUSE="-debug +autostart -experimental gtk2 +gtk3 -awn -indicator -lxde -mate -standalone +systray -xfce4"
 
 LANGS="de es fr it lt ru zh_CN"
 for lang in ${LANGS} ; do IUSE+=" linguas_${lang}"; done
