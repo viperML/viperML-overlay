@@ -11,6 +11,10 @@ HOMEPAGE="https://github.com/catsout/wallpaper-engine-kde-plugin"
 EGIT_REPO_URI="https://github.com/catsout/wallpaper-engine-kde-plugin"
 KEYWORDS=""
 
+PATCHES=(
+	"${FILESDIR}/static.patch"
+)
+
 
 LICENSE="GPL-2"
 SLOT="0"
