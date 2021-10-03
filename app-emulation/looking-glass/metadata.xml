@@ -3,8 +3,8 @@
 <pkgmetadata>
 
     <upstream>
-            <doc>https://ohmyposh.dev/docs/</doc>
-            <remote-id type="github">jandedobbeleer/oh-my-posh</remote-id>
+            <doc>https://looking-glass.io/docs/stable/</doc>
+            <remote-id type="github">gnif/LookingGlass</remote-id>
     </upstream>
 
     <maintainer type="person">

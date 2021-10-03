@@ -3,8 +3,10 @@
 <pkgmetadata>
 
     <upstream>
-            <doc>https://ohmyposh.dev/docs/</doc>
-            <remote-id type="github">jandedobbeleer/oh-my-posh</remote-id>
+            <doc>https://github.com/udda/multiload-ng/wiki</doc>
+            <bugs-to>mailto:mr.udda@gmail.com</bugs-to>
+            <changelog>https://github.com/udda/multiload-ng/blob/master/Changelog.md</changelog>
+            <remote-id type="gitlab">Gnurur/chad_launcher</remote-id>
     </upstream>
 
     <maintainer type="person">

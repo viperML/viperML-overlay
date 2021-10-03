@@ -3,8 +3,8 @@
 <pkgmetadata>
 
     <upstream>
-            <doc>https://ohmyposh.dev/docs/</doc>
-            <remote-id type="github">jandedobbeleer/oh-my-posh</remote-id>
+            <doc>https://github.com/catsout/wallpaper-engine-kde-plugin</doc>
+            <remote-id type="github">catsout/wallpaper-engine-kde-plugin</remote-id>
     </upstream>
 
     <maintainer type="person">
