@@ -1,3 +1,0 @@
-#+TITLE: viperML-overlay
-
-Gentoo's portage overlay with packages for personal use.
