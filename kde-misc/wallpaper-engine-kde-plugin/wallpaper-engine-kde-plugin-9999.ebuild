@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake git-r3 flag-o-matic
+inherit cmake git-r3
 
 DESCRIPTION="A wallpaper plugin integrating wallpaper engine into kde wallpaper setting."
 HOMEPAGE="https://github.com/catsout/wallpaper-engine-kde-plugin"
@@ -27,12 +27,3 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
-
-
-# src_configure() {
-#  	cmake_src_configure
-# }
-#
-# src_install() {
-# 	cmake_src_install
-# }
