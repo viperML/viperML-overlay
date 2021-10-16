@@ -39,5 +39,8 @@ src_build() {
 }
 
 src_install() {
-	emake DESTDIR="${D}" install
+    dolib.so target/release/libspotifyadblock.so
+
+    insinto /etc/"${PN}"
+    doins config.toml
 }
