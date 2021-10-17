@@ -18,7 +18,7 @@ quote-1.0.9
 regex-1.5.4
 toml-0.5.8
 "
-inherit cargo
+inherit cargo xdg
 
 DESCRIPTION="Spotify adblocker"
 HOMEPAGE="https://github.com/abba23/spotify-adblock"
@@ -30,7 +30,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
+DEPEND="media-sound/spotify"
 RDEPEND="${DEPEND}"
 BDDEPEND=""
 
@@ -39,8 +39,28 @@ src_build() {
 }
 
 src_install() {
-    dolib.so target/release/libspotifyadblock.so
+    # Creating a new shortcut for spotify
+	SPOTIFY_HOME=/opt/spotify/spotify-client
+    dodir /usr/bin
+	cat <<-EOF >"${D}"/usr/bin/spotify-adblock || die
+		#! /bin/sh
+		LD_LIBRARY_PATH="/usr/$(get_libdir)/apulse" \\
+        LD_PRELOAD=/usr/$(get_libdir)/spotify-adblock.so \\
+		exec ${SPOTIFY_HOME}/spotify "\$@"
+	EOF
+	fperms +x /usr/bin/spotify-adblock
+
+
+    # Adblock lib install
+    newlib.so target/release/libspotifyadblock.so spotify-adblock.so
 
     insinto /etc/"${PN}"
     doins config.toml
+
+    insinto /usr/share/applications
+    doins "${FILESDIR}/spotify-adblock.desktop"
+}
+
+pkg_postinst() {
+    xdg_pkg_postinst
 }
