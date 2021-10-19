@@ -30,7 +30,7 @@ dev-perl/Config-IniFiles
 dev-perl/YAML-PP
 dev-perl/boolean
 efi? (
-	systemd? ( sys-apps/systemd )
+	systemd? ( sys-apps/systemd[gnuefi] )
 	!systemd? ( sys-boot/systemd-boot )
 )
 sys-fs/zfs

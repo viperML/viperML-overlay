@@ -1,8 +1,6 @@
-diff --git a/etc/zfsbootmenu/config.yaml b/etc/zfsbootmenu/config.yaml
-index ec588af..5f6a9ef 100644
 --- a/etc/zfsbootmenu/config.yaml
 +++ b/etc/zfsbootmenu/config.yaml
-@@ -3,14 +3,14 @@ Global:
+@@ -3,14 +3,15 @@ Global:
    BootMountPoint: /boot/efi
    DracutConfDir: /etc/zfsbootmenu/dracut.conf.d
  Components:
@@ -16,6 +14,7 @@ index ec588af..5f6a9ef 100644
  EFI:
 -  ImageDir: /boot/efi/EFI/void
 +  ImageDir: /boot/efi/EFI/gentoo
++  Stub: /usr/lib/systemd/boot/efi/linuxx64.elf.stub
    Versions: false
    Enabled: false
  Kernel:
