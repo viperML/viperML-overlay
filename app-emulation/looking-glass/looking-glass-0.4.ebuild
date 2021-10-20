@@ -28,7 +28,6 @@ DEPEND="${RDEPEND}
 	app-emulation/spice-protocol"
 BDEPEND="virtual/pkgconfig"
 
-
 src_install() {
 	cmake_src_install
 

@@ -35,7 +35,6 @@ SRC_URI="
 
 S="${WORKDIR}/${P}/cmd/${PN}"
 
-
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"

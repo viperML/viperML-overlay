@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-
     <upstream>
             <doc>https://github.com/viperML/qemu-android-x86</doc>
             <bugs-to>mailto:ayatsfer@gmail.com</bugs-to>
             <remote-id type="github">viperML/qemu-android-x86</remote-id>
     </upstream>
-
     <maintainer type="person">
         <email>ayatsfer@gmail.com</email>
         <name>Fernando Ayats</name>
     </maintainer>
-
     <use>
         <flag name="rwsystem">Transform the read-only system image into read/write</flag>
     </use>
-
 </pkgmetadata>

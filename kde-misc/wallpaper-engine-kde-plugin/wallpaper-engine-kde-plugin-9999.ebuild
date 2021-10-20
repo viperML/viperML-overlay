@@ -29,7 +29,6 @@ LICENSE="GPL-2"
 SLOT="0"
 IUSE=""
 
-
 DEPEND="
 	media-video/mpv[libmpv]
 	dev-qt/qtdeclarative

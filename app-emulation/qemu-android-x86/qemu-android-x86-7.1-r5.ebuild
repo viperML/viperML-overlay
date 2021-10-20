@@ -14,7 +14,6 @@ LICENSE="GPL-2 Apache-2.0 CC0-1.0"
 SLOT="0"
 IUSE="+rwsystem +gtk"
 
-
 RDEPEND="
 app-emulation/qemu[qemu_softmmu_targets_x86_64,qemu_user_targets_x86_64,virtfs,virgl,sdl,sdl-image,virtfs,vhost-net]
 gtk? ( gnome-extra/zenity  )

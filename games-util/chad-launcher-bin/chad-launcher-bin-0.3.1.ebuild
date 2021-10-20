@@ -15,7 +15,6 @@ https://gitlab.com/Gnurur/${MY_PN}/-/archive/${PV}/${MY_PN}-${PV}.tar.bz2 -> ${P
 KEYWORDS="~amd64"
 S="${WORKDIR}"
 
-
 LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
@@ -32,8 +31,6 @@ RDEPEND="
 "
 
 DEPEND="${RDEPEND}"
-
-
 
 src_install() {
 	dobin chad-launcher

@@ -5,7 +5,7 @@ EAPI=7
 
 inherit flag-o-matic
 
-DESCRIPTION="Utility to replace a desktop background with a movie, screensaver, etc."
+DESCRIPTION="Utility to replace a desktop background with a movie, screensaver, etc"
 KEYWORDS="~amd64"
 LICENSE="HPND"
 HOMEPAGE="https://github.com/ujjwal96/xwinwrap.git"
@@ -23,7 +23,6 @@ RDEPEND="${DEPEND}"
 src_build(){
 	emake
 }
-
 
 src_install() {
 	emake install

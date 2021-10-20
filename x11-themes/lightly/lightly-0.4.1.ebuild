@@ -5,7 +5,7 @@ EAPI=7
 
 inherit ecm
 
-DESCRIPTION="Lightly is a fork of breeze theme style that aims to be visually modern and minimalistic."
+DESCRIPTION="Fork of breeze theme style that aims to be visually modern and minimalistic"
 HOMEPAGE="https://github.com/Luwx/Lightly"
 
 if [[ ${PV} == 9999 ]]; then

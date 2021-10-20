@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-
     <upstream>
             <doc>https://github.com/udda/multiload-ng/wiki</doc>
             <bugs-to>mailto:mr.udda@gmail.com</bugs-to>
             <changelog>https://github.com/udda/multiload-ng/blob/master/Changelog.md</changelog>
             <remote-id type="gitlab">Gnurur/chad_launcher</remote-id>
     </upstream>
-
     <maintainer type="person">
         <email>ayatsfer@gmail.com</email>
         <name>Fernando Ayats</name>
     </maintainer>
-
 </pkgmetadata>
