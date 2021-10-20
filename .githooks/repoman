@@ -1,2 +1,0 @@
-#!/bin/sh
-repoman full -x -d

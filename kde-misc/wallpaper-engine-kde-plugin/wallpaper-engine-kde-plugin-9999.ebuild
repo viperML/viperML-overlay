@@ -20,10 +20,9 @@ To finalize the installation, please
 - Purchase Wallpaper Engine and install it.
 - Subscribe to and download some wallpapers running the application with proton or via the Steam Workshop.
 - Install the KDE plugin:
-  $ git clone https://github.com/catsout/wallpaper-engine-kde-plugin.git
-  $ plasmapkg2 -i wallpaper-engine-kde-plugin/plugin
+$ git clone https://github.com/catsout/wallpaper-engine-kde-plugin.git
+$ plasmapkg2 -i wallpaper-engine-kde-plugin/plugin
 - Select your wallpaper right clicking your desktop"
-
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -37,11 +36,11 @@ RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
 src_install() {
-    default
-    cmake_src_install
-    readme.gentoo_create_doc
+	default
+	cmake_src_install
+	readme.gentoo_create_doc
 }
 
 pkg_postinst() {
-    readme.gentoo_print_elog
+	readme.gentoo_print_elog
 }

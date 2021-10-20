@@ -25,7 +25,7 @@ rwsystem? ( sys-fs/squashfs-tools )
 
 src_unpack() {
 	# Mixed Git+Binaries, so unpack and move into git repo root
- 	rpm_src_unpack ${A}
+	rpm_src_unpack ${A}
 	mv android-"${PV}"-"${PR}" "${WORKDIR}/${P}"
 	git-r3_fetch
 	git-r3_checkout

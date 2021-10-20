@@ -19,7 +19,6 @@ LICENSE="GPL-3"
 SLOT="0"
 IUSE=""
 
-
 RDEPEND="
 	net-libs/webkit-gtk
 	net-misc/curl
