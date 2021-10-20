@@ -35,3 +35,8 @@ efi? (
 sys-fs/zfs
 sys-kernel/dracut
 "
+
+pkg_postinst () {
+	elog "Please consult upstream documentation to install the bootloader
+https://github.com/zbm-dev/zfsbootmenu"
+}
