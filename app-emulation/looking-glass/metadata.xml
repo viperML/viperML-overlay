@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-    <upstream>
-            <doc>https://looking-glass.io/docs/stable/</doc>
-            <remote-id type="github">gnif/LookingGlass</remote-id>
-    </upstream>
-    <maintainer type="person">
-        <email>ayatsfer@gmail.com</email>
-        <name>Fernando Ayats</name>
-    </maintainer>
+	<maintainer type="person">
+		<email>ayatsfer@gmail.com</email>
+		<name>Fernando Ayats</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">gnif/LookingGlass</remote-id>
+		<doc>https://looking-glass.io/docs/stable/</doc>
+	</upstream>
+	<longdescription>
+	Looking Glass is an open source application that allows the use of a KVM (Kernel-based Virtual Machine) configured for VGA PCI Pass-through without an attached physical monitor, keyboard or mouse. This is the final step required to move away from dual booting with other operating systems for legacy programs that require high performance graphics.
+	</longdescription>
 </pkgmetadata>

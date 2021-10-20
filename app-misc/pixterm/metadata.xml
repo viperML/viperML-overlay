@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-    <longdescription>
+	<maintainer type="person">
+		<email>ayatsfer@gmail.com</email>
+		<name>Fernando Ayats</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">eliukblau/pixterm</remote-id>
+	</upstream>
+	<longdescription>
 PIXterm shows images directly in your terminal, recreating the pixels through a combination of ANSI character background color and the unicode lower half block element. If image has transparency, an optional matte color can be used for background. Also, you can specify a dithering mode; in which case, the image is rendered using block elements with different shades, or using standard ASCII characters in the same way. In dithering mode, the matte color is used to fill the background of the blocks or characters.
-    </longdescription>
-    <upstream>
-            <remote-id type="github">eliukblau/pixterm</remote-id>
-    </upstream>
-    <maintainer type="person">
-        <email>ayatsfer@gmail.com</email>
-        <name>Fernando Ayats</name>
-    </maintainer>
+	</longdescription>
 </pkgmetadata>

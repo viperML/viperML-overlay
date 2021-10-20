@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-    <upstream>
-            <doc>https://ohmyposh.dev/docs/</doc>
-            <remote-id type="github">jandedobbeleer/oh-my-posh</remote-id>
-    </upstream>
-    <maintainer type="person">
-        <email>ayatsfer@gmail.com</email>
-        <name>Fernando Ayats</name>
-    </maintainer>
+	<maintainer type="person">
+		<email>ayatsfer@gmail.com</email>
+		<name>Fernando Ayats</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">jandedobbeleer/oh-my-posh</remote-id>
+		<doc>https://ohmyposh.dev/docs/</doc>
+	</upstream>
 </pkgmetadata>

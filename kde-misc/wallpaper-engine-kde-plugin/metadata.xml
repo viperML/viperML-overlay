@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-    <upstream>
-            <doc>https://github.com/catsout/wallpaper-engine-kde-plugin</doc>
-            <remote-id type="github">catsout/wallpaper-engine-kde-plugin</remote-id>
-    </upstream>
-    <maintainer type="person">
-        <email>ayatsfer@gmail.com</email>
-        <name>Fernando Ayats</name>
-    </maintainer>
+	<upstream>
+		<remote-id type="github">catsout/wallpaper-engine-kde-plugin</remote-id>
+	</upstream>
+	<maintainer type="person">
+		<email>ayatsfer@gmail.com</email>
+		<name>Fernando Ayats</name>
+	</maintainer>
 </pkgmetadata>

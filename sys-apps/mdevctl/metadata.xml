@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-    <longdescription>
+	<longdescription>
 mdevctl is a utility for managing and persisting devices in the mediated device device framework of the Linux kernel. Mediated devices are sub-devices of a parent device (ex. a vGPU) which can be dynamically created and potentially used by drivers like vfio-mdev for assignment to virtual machines.
-    </longdescription>
-    <maintainer type="person">
-        <email>ayatsfer@gmail.com</email>
-        <name>Fernando Ayats</name>
-    </maintainer>
+	</longdescription>
+	<maintainer type="person">
+		<email>ayatsfer@gmail.com</email>
+		<name>Fernando Ayats</name>
+	</maintainer>
+	<upstream>
+		<remote-id type="github">mdevctl/mdevctl</remote-id>
+	</upstream>
 </pkgmetadata>
