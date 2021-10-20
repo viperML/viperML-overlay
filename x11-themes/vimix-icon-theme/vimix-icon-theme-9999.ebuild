@@ -15,7 +15,7 @@ else
 	MY_PV="${PV//./-}"
 	MY_P="${PN}-${MY_PV}"
 	SRC_URI="${HOMEPAGE}/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64"
 	S="${WORKDIR}/${MY_P}"
 fi
 
@@ -28,7 +28,6 @@ RDEPEND="${DEPEND}"
 
 src_install() {
 	mkdir -p "${ED}"/usr/share/icons
-
 	./install.sh -a -d "${ED}"/usr/share/icons || die
 }
 

@@ -18,10 +18,9 @@ PATCHES=("${FILESDIR}/branding.patch")
 
 LICENSE="MIT"
 SLOT="0"
-
 IUSE="+efi +systemd"
 
-DEPEND="
+RDEPEND="
 app-shells/fzf
 sys-apps/kexec-tools
 sys-block/mbuffer
@@ -36,6 +35,3 @@ efi? (
 sys-fs/zfs
 sys-kernel/dracut
 "
-
-RDEPEND="${DEPEND}"
-BDEPEND="${DEPEND}"

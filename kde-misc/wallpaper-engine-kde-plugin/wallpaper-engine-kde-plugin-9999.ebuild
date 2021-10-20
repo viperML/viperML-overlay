@@ -32,8 +32,8 @@ DEPEND="
 	media-video/mpv[libmpv]
 	dev-qt/qtdeclarative
 "
+
 RDEPEND="${DEPEND}"
-BDEPEND="${DEPEND}"
 
 src_install() {
 	default

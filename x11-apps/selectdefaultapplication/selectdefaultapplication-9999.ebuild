@@ -11,14 +11,9 @@ EGIT_REPO_URI="https://github.com/sandsmark/selectdefaultapplication"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
 IUSE=""
 
-DEPEND="
-x11-themes/hicolor-icon-theme
-"
-RDEPEND="${DEPEND}"
-BDEPEND=""
+RDEPEND="x11-themes/hicolor-icon-theme"
 
 src_compile() {
 	eqmake5 || die "eqmake5 failed"

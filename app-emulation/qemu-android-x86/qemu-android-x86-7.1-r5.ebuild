@@ -15,13 +15,11 @@ SLOT="0"
 IUSE="+rwsystem +gtk"
 
 RDEPEND="
-app-emulation/qemu[qemu_softmmu_targets_x86_64,qemu_user_targets_x86_64,virtfs,virgl,sdl,sdl-image,virtfs,vhost-net]
-gtk? ( gnome-extra/zenity  )
-"
-DEPEND="${RDEPEND}"
-BDEPEND="
-rwsystem? ( sys-fs/squashfs-tools )
-"
+	app-emulation/qemu[qemu_softmmu_targets_x86_64,qemu_user_targets_x86_64,virtfs,virgl,sdl,sdl-image,virtfs,vhost-net]
+	gtk? ( gnome-extra/zenity )"
+
+DEPEND="${RDEPEND}
+	rwsystem? ( sys-fs/squashfs-tools )"
 
 src_unpack() {
 	# Mixed Git+Binaries, so unpack and move into git repo root

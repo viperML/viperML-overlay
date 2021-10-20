@@ -30,7 +30,6 @@ DEPEND="
 	virtual/udev
 "
 RDEPEND="${DEPEND}"
-BDEPEND=""
 
 BUILD_DIR=${WORKDIR}/${P}_build
 

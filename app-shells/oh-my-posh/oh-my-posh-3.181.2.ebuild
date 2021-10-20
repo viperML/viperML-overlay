@@ -217,12 +217,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 S="${WORKDIR}/${P}/src"
 
-RDEPEND=""
-
-DEPEND="${RDEPEND}"
-BDEPEND="
-	>=dev-lang/go-1.16
-"
+DEPEND=">=dev-lang/go-1.16"
 
 src_compile() {
 	go build -o oh-my-posh

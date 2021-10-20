@@ -33,12 +33,13 @@ RDEPEND="dev-libs/libev
 	opengl? ( virtual/opengl )
 	pcre? ( dev-libs/libpcre )
 	!x11-misc/compton"
+
 DEPEND="${RDEPEND}
 	x11-base/xorg-proto"
+
 BDEPEND="virtual/pkgconfig
 	doc? ( app-text/asciidoc )
-	test? ( $(python_gen_any_dep 'dev-python/xcffib[${PYTHON_USEDEP}]') )
-"
+	test? ( $(python_gen_any_dep 'dev-python/xcffib[${PYTHON_USEDEP}]') )"
 
 DOCS=( README.md picom.sample.conf )
 

@@ -7,26 +7,30 @@ inherit cmake git-r3 xdg-utils
 
 DESCRIPTION="An extremely low latency KVMFR (KVM FrameRelay) implementation"
 HOMEPAGE="https://looking-glass.io https://github.com/gnif/LookingGlass"
+
+# Git submodules required for the build
 EGIT_REPO_URI="https://github.com/gnif/LookingGlass"
 EGIT_COMMIT="B4"
+KEYWORDS="~amd64"
 
 S="${WORKDIR}/${P}/client"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64"
 IUSE=""
 
-RDEPEND="dev-libs/libconfig:0=
+RDEPEND="
+	dev-libs/libconfig:0=
 	dev-libs/nettle:=[gmp]
 	media-libs/freetype:2
 	media-libs/fontconfig:1.0
 	media-libs/libsdl2
 	media-libs/sdl2-ttf
 	virtual/glu"
+
 DEPEND="${RDEPEND}
-	app-emulation/spice-protocol"
-BDEPEND="virtual/pkgconfig"
+	app-emulation/spice-protocol
+	virtual/pkgconfig"
 
 src_install() {
 	cmake_src_install

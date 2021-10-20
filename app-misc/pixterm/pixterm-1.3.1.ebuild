@@ -39,12 +39,7 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND=""
-
-DEPEND="${RDEPEND}"
-BDEPEND="
-	>=dev-lang/go-1.13
-"
+DEPEND=">=dev-lang/go-1.13"
 
 src_compile() {
 	go build -o "${PN}"

@@ -13,7 +13,7 @@ else
 	MY_PV="${PV//./-}"
 	MY_P="${PN}-${MY_PV}"
 	SRC_URI="${HOMEPAGE}/archive/${MY_PV}.tar.gz -> ${MY_P}.tar.gz"
-	KEYWORDS="~amd64 ~x86"
+	KEYWORDS="~amd64"
 	S="${WORKDIR}/${MY_P}"
 fi
 
@@ -25,6 +25,7 @@ DEPEND="
 	x11-libs/gtk+:3
 	x11-themes/gtk-engines
 	x11-themes/gtk-engines-murrine"
+
 RDEPEND="${DEPEND}"
 
 src_install() {

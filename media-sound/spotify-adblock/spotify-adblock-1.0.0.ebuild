@@ -25,15 +25,13 @@ DESCRIPTION="Spotify adblocker"
 HOMEPAGE="https://github.com/abba23/spotify-adblock"
 SRC_URI="https://github.com/abba23/${PN}/archive/refs/tags/v${PV}.tar.gz
 $(cargo_crate_uris ${CRATES})"
+KEYWORDS="~amd64"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="media-sound/spotify"
-RDEPEND="${DEPEND}"
-BDDEPEND=""
+RDEPEND="media-sound/spotify"
 
 src_build() {
 	emake
