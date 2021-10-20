@@ -5,7 +5,7 @@ EAPI=7
 
 inherit xdg-utils
 
-DESCRIPTION="Libre/Free game launcher/pirate game store for users who dislike DRM or other restrictions of freedom"
+DESCRIPTION="Libre/Free game launcher/pirate game store"
 HOMEPAGE="https://gitlab.com/Gnurur/chad_launcher"
 MY_PN="chad_launcher"
 

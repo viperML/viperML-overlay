@@ -5,7 +5,7 @@ EAPI=8
 
 inherit git-r3 qmake-utils
 
-DESCRIPTION="A very simple application that lets you define default applications on Linux in a sane way."
+DESCRIPTION="Define default applications on Linux in a sane way."
 HOMEPAGE="https://github.com/sandsmark/selectdefaultapplication"
 EGIT_REPO_URI="https://github.com/sandsmark/selectdefaultapplication"
 

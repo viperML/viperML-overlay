@@ -5,7 +5,7 @@ EAPI=7
 
 inherit cmake git-r3 xdg-utils
 
-DESCRIPTION=""
+DESCRIPTION="An extremely low latency KVMFR (KVM FrameRelay) implementation"
 HOMEPAGE="https://looking-glass.io https://github.com/gnif/LookingGlass"
 EGIT_REPO_URI="https://github.com/gnif/LookingGlass"
 EGIT_COMMIT="B4"
