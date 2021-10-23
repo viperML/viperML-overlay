@@ -64,7 +64,7 @@ inherit cargo
 DESCRIPTION="A mediated device management utility for Linux"
 HOMEPAGE="https://github.com/mdevctl/mdevctl"
 SRC_URI="
-	https://github.com/mdevctl/${PN}/archive/refs/tags/v${PV}.zip -> ${P}.tar.gz
+	https://github.com/mdevctl/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	$(cargo_crate_uris)
 "
 KEYWORDS="~amd64"
