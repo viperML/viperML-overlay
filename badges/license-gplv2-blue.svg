@@ -1,0 +1,52 @@
+<svg
+    aria-label="License GPLv2 Blue"
+    height="20"
+    role="img"
+    width="92"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns="http://www.w3.org/2000/svg"
+    >
+  <title>
+    License GPLv2 Blue
+  </title>
+  <g
+      shape-rendering="crispEdges">
+    <rect
+        fill="#555"
+        height="20"
+        width="47"
+        />
+    <rect
+        fill="#007ec6"
+        height="20"
+        width="45"
+        x="47"
+        />
+  </g>
+  <g
+      fill="#fff"
+      font-family="Verdana,Geneva,DejaVu Sans,sans-serif"
+      font-size="110"
+      text-anchor="middle"
+      text-rendering="geometricPrecision"
+      >
+    <text
+        fill="#fff"
+        textLength="370"
+        transform="scale(.1)"
+        x="245"
+        y="140"
+        >
+      license
+    </text>
+    <text
+        fill="#fff"
+        textLength="350"
+        transform="scale(.1)"
+        x="685"
+        y="140"
+        >
+      GPLv2
+    </text>
+  </g>
+</svg>
