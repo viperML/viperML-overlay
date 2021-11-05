@@ -15,7 +15,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE=""
 
-DEPEND="net-libs/nodejs"
+DEPEND="net-libs/nodejs[npm]"
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}/${P}/src/kcm" # needed for automating cmake.eclass
