@@ -9,8 +9,8 @@ DESCRIPTION="A dynamic tiling extension for KWin"
 HOMEPAGE="https://github.com/Bismuth-Forge/bismuth"
 
 SRC_URI="
-	https://github.com/Bismuth-Forge/${PN}/releases/download/v${PV}/build-artifacts.tar.gz -> ${P}-build-artifacts.tar.gz
 	https://github.com/Bismuth-Forge/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	https://github.com/Bismuth-Forge/${PN}/releases/download/v${PV}/binary-release.tar.gz -> ${P}-binary-artifacts.tar.gz
 "
 KEYWORDS="~amd64"
 
@@ -37,8 +37,7 @@ S="${WORKDIR}/${P}/src/kcm"
 src_install() {
 	cmake_src_install
 
-	cd "${WORKDIR}/kwinscript"
-	insinto /usr/share/kwin/scripts/${PN}
-	doins -r contents
-	doins metadata.desktop
+	cd "${WORKDIR}/share/kwin/scripts"
+	insinto /usr/share/kwin/scripts
+	doins -r bismuth
 }
