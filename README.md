@@ -17,15 +17,7 @@ Feel free to submit pull requests to improve this overlay.
 
 ## Installation
 
-### eselect-repository
-
 ```
 # eselect-repository enable viperML-overlay
-# emerge --sync viperML-overlay
-```
-### layman
-
-```
-# layman -a viperML-overlay
 # emerge --sync viperML-overlay
 ```

@@ -40,7 +40,7 @@ src_install() {
 }
 
 pkg_postinst() {
-	elog "To get load the wallpapers, install Wallpaper Engine in Steam and subscribe to some wallpapers"
+	elog "To load wallpapers, install Wallpaper Engine with Steam and subscribe to some wallpapers"
 	ewarn "If you encounter any problems that lock you out of Plasma, you can disable this extension with:"
 	ewarn "$ sed -i '/WallpaperFilePath/d' ~/.config/plasma-org.kde.plasma.desktop-appletsrc"
 }
