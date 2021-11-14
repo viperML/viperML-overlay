@@ -8,4 +8,7 @@
 		<email>ayatsfer@gmail.com</email>
 		<name>Fernando Ayats</name>
 	</maintainer>
+	<use>
+		<flag name="webengine">Pull dependencies to run web-based wallpapers (bad performance)</flag>
+	</use>
 </pkgmetadata>

@@ -20,16 +20,18 @@ PATCHES=("${FILESDIR}/static.patch")
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE=""
+IUSE="-webengine"
 
 DEPEND="
 	media-video/mpv[libmpv]
+	dev-qt/qtmultimedia[gstreamer]
 	dev-qt/qtdeclarative
 "
 RDEPEND="${DEPEND}
 	dev-qt/qtwebsockets
 	dev-qt/qtwebchannel
 	dev-python/websockets
+	webengine? ( dev-qt/qtwebengine )
 "
 
 src_install() {
