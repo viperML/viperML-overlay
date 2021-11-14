@@ -6,14 +6,9 @@ Multiload-ng is a modern graphical system monitor. It's a near-complete rewrite 
 
 It runs on a variety of panels, including XFCE, MATE, LXDE, and others.
 There is also a system tray version, for panels without plugin support, and a standalone version, with its own window.
-
-Multiload-ng can be built with GTK2 and GTK3, so can be embedded within GTK2/GTK3 builds of all the aforementioned panels.
 	</longdescription>
 	<use>
 		<flag name="autostart">Install autostart entries for suitable targets</flag>
-		<flag name="gtk2">Build against GTK+2 (check compatibility with your panel)</flag>
-		<flag name="gtk3">Build against GTK+3 (check compatibility with your panel)</flag>
-		<flag name="awn">Build plugin for <pkg>gnome-extra/avant-window-navigator</pkg> (experimental)</flag>
 		<flag name="indicator">Build plugin with <pkg>dev-libs/libappindicator</pkg> (Ubuntu Unity and others)</flag>
 		<flag name="lxde">Build plugin for <pkg>lxde-base/lxpanel</pkg></flag>
 		<flag name="mate">Build plugin for <pkg>mate-base/mate-panel</pkg></flag>
