@@ -8,7 +8,7 @@ inherit cmake
 DESCRIPTION="A dialog / emoji picker inspired by the Windows 10 emoji picker"
 HOMEPAGE="https://github.com/GaZaTu/x11-emoji-picker"
 
-if [[ ${PV} == *9999* ]]; then
+if [[ ${PV} == "9999" ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/GaZaTu/x11-emoji-picker"
 else
@@ -16,14 +16,16 @@ else
 	KEYWORDS="~amd64"
 fi
 
-LICENSE="MIT"
+LICENSE="MIT CC-BY-4.0 unicode"
 SLOT="0"
 
+QTMIN="5.15.2"
+
 DEPEND="
-	dev-qt/qtcore
-	dev-qt/qtgui
-	dev-qt/qtwidgets
-	dev-libs/icu
-	x11-misc/xdotool
+	>=dev-qt/qtcore-${QTMIN}:5
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtwidgets-${QTMIN}:5
+	>=dev-libs/icu-69.1-r1
+	>=x11-misc/xdotool-3.20210903.1
 "
 RDEPEND="${DEPEND}"
