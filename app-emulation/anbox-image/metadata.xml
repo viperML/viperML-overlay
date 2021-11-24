@@ -5,18 +5,11 @@
 		<email>ayatsfer@gmail.com</email>
 		<name>Fernando Ayats</name>
 	</maintainer>
-<!--
 	<upstream>
-		<remote-id type="github"></remote-id>
-		<doc></doc>
-		<changelog></changelog>
+		<remote-id type="github">anbox/anbox</remote-id>
 	</upstream>
--->
-<!--
-	<longdescription>
-	</longdescription>
--->
 	<use>
-		<flag name="libhoudini">Install the ARM translation layer</flag>
+		<flag name="houdini">Include libhoudini (ARM translation layer)</flag>
+		<flag name="opengapps">Include OpenGapps (Google Play Store and Services)</flag>
 	</use>
 </pkgmetadata>
