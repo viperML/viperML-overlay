@@ -16,8 +16,6 @@ else
 	KEYWORDS="~amd64"
 fi
 
-PATCHES=("${FILESDIR}/static.patch")
-
 LICENSE="GPL-2"
 SLOT="0"
 IUSE="-webengine"
