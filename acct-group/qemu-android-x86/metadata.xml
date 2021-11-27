@@ -5,11 +5,4 @@
 		<email>ayatsfer@gmail.com</email>
 		<name>Fernando Ayats</name>
 	</maintainer>
-	<upstream>
-		<remote-id type="github">viperML/qemu-android-x86</remote-id>
-	</upstream>
-	<use>
-		<flag name="android-7">Which Android-x86 image to use</flag>
-		<flag name="cyanogenmod-14">Which Android-x86 image to use</flag>
-	</use>
 </pkgmetadata>
