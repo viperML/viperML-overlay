@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-
+adssad
 CRATES="
 	aho-corasick-0.7.18
 	ansi_term-0.11.0
