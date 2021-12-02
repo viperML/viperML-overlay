@@ -1,8 +1,8 @@
-name: repoman ci
+name: repoman-ci
 on: [push, pull_request]
 jobs:
   repoman-ci:
-    name: repoman ci
+    name: repoman-ci
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
