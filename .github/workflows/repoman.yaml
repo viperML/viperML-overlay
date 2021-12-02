@@ -5,14 +5,9 @@ jobs:
     name: repoman ci
     runs-on: ubuntu-latest
     container:
-      image: tastytea/repoman:latest
+      image: aegypius/repoman
+      volumes:
+        - /home/runner/work/viperML/viperML-overlay:/overlay
     steps:
-      - run: |
-          pwd
-          ls
-          cat /etc/os-release
       - uses: actions/checkout@v1
-      - run: |
-          pwd
-          ls
-          cat /etc/os-release
+      - run: pwd
