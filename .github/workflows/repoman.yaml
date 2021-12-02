@@ -6,10 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: tastytea/repoman:latest
-      volumes:
-        - /home/runner/work/viperML/viperML-overlay:/mnt
     steps:
-      - uses: actions/checkout@v2
+      - run: |
+          pwd
+          ls
+          cat /etc/os-release
+      - uses: actions/checkout@v1
       - run: |
           pwd
           ls
