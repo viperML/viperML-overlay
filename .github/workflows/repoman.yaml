@@ -7,7 +7,8 @@ jobs:
     container:
       image: tastytea/repoman
       volumes:
-        - /home/runner/work/viperML/viperML-overlay:/overlay
+        - /home/runner/work/viperML-overlay/viperML-overlay:/overlay
     steps:
+      - uses: actions/checkout@v2
       - run: repoman --version
       - run: ls /overlay
