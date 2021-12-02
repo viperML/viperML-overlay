@@ -1,14 +1,11 @@
 name: repoman ci
-on: [push]
+on: [push, pull_request]
 jobs:
   repoman-ci:
     name: repoman ci
     runs-on: ubuntu-latest
-    container:
-      image: tastytea/repoman
-      volumes:
-        - /home/runner/work/viperML-overlay/viperML-overlay:/overlay
     steps:
       - uses: actions/checkout@v2
-      - run: repoman --version
-      - run: ls /overlay
+      - uses: docker://tastytea/repoman
+        with:
+          args: repoman full -Idix
