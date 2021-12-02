@@ -10,3 +10,4 @@ jobs:
         - /home/runner/work/viperML/viperML-overlay:/overlay
     steps:
       - run: repoman --version
+      - run: ls /overlay
