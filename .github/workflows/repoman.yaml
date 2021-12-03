@@ -1,11 +1,25 @@
 name: repoman-ci
-on: [push, pull_request]
+on:
+
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "**.md"
+      - "**.skel"
+
+  pull_request:
+    branches:
+      - "**"
+
 jobs:
   repoman-ci:
     name: repoman-ci
     runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v2
+
       - uses: docker://tastytea/repoman
         with:
           args: repoman full -Idix

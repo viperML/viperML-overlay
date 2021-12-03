@@ -8,10 +8,7 @@
         <img src="./badges/license-gplv2-blue.svg">
     </a>
     <a href="https://github.com/viperML/viperML-overlay/actions">
-        <img src="https://img.shields.io/github/workflow/status/viperML/viperML-overlay/repoman-ci/master?label=repoman@master&logo=passing&style=flat-square">
-    </a>
-    <a href="https://github.com/viperML/viperML-overlay/actions">
-        <img src="https://img.shields.io/github/workflow/status/viperML/viperML-overlay/repoman-ci/testing?label=repoman@testing&logo=passing&style=flat-square">
+        <img src="https://img.shields.io/github/workflow/status/viperML/viperML-overlay/repoman-ci/master?label=repoman&logo=passing&style=flat-square">
     </a>
 </p>
 
