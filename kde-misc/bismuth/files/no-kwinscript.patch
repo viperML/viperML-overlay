@@ -1,0 +1,7 @@
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -2,4 +2,3 @@
+ # SPDX-License-Identifier: MIT
+ 
+ add_subdirectory(kcm)
+-add_subdirectory(kwinscript)

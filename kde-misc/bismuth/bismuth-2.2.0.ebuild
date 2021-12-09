@@ -8,10 +8,14 @@ inherit cmake
 DESCRIPTION="A dynamic tiling extension for KWin"
 HOMEPAGE="https://github.com/Bismuth-Forge/bismuth"
 
+# Building tyhe kwinscript requires using npm, which is a pain in the **
+# So we pull the artifacts from the npm build from upstream
 SRC_URI="
 	https://github.com/Bismuth-Forge/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 	https://github.com/Bismuth-Forge/${PN}/releases/download/v${PV}/binary-release.tar.gz -> ${P}-binary-artifacts.tar.gz
 "
+PATCHES=( "${FILESDIR}/no-kwinscript.patch" )
+
 KEYWORDS="~amd64"
 
 LICENSE="MIT CC-BY-4.0 LGPL-3+"
@@ -31,8 +35,6 @@ RDEPEND="
 	>=kde-frameworks/kcoreaddons-${KFMIN}:5
 	>=kde-frameworks/ki18n-${KFMIN}:5
 "
-
-S="${WORKDIR}/${P}/src/kcm"
 
 src_install() {
 	cmake_src_install
