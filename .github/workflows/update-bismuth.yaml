@@ -1,0 +1,20 @@
+name: Check for updates on kde-misc/bismuth
+
+on:
+  workflow_dispath:
+
+jobs:
+  run-update:
+    runs-on: ubuntu-latest
+    setps:
+      - uses: actions/checkout@v2
+      - name: Install system dependencies
+        run: sudo apt install -y curl jq
+      - name: Run update.sh
+        run: ./kde-misc/bismuth/update.sh
+      - name: Create Pull request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.PAT }}
+          commit-message: kde-misc/bismuth automatic update
+          branch: update_kde-misc/bismuth
