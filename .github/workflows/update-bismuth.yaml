@@ -7,7 +7,7 @@ on:
       - testing
 
 jobs:
-  run-update:
+  update_kde-misc_bismuth:
     runs-on: ubuntu-latest
     container: viperml/gentoo-plasma
     steps:
