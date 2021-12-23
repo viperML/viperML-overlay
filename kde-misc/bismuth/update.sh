@@ -8,3 +8,4 @@ remote_version=`curl --silent "https://api.github.com/repos/Bismuth-Forge/bismut
 echo "Remote version: $remote_version"
 
 mv $my_ebuild $(dirname $my_ebuild)/bismuth-$remote_version.ebuild || echo "No updates found"
+cd "$(dirname $my_ebuild)" && repoman manifest

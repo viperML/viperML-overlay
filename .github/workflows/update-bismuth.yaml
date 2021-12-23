@@ -9,10 +9,9 @@ on:
 jobs:
   run-update:
     runs-on: ubuntu-latest
+    container: viperml/gentoo-plasma
     steps:
       - uses: actions/checkout@v2
-      - name: Install system dependencies
-        run: sudo apt install -y curl jq
       - name: Run update.sh
         run: ./kde-misc/bismuth/update.sh
       - name: Create Pull request
