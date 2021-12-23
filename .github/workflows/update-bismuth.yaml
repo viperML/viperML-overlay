@@ -4,9 +4,6 @@ on:
   schedule:
     # Every saturday at night
     - cron: '20 04 * * SAT'
-  push:
-    branches:
-      - testing
 
 jobs:
   update_kde-misc_bismuth:
