@@ -1,7 +1,7 @@
 name: Check for updates on kde-misc/bismuth
 
 on:
-  workflow_dispath:
+  workflow_dispatch:
 
 jobs:
   run-update:
