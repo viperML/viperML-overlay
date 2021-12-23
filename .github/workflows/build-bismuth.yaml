@@ -1,0 +1,17 @@
+name: Check build - kde-misc/bismuth
+
+on:
+  pull_request:
+    branches:
+      - "**"
+    paths:
+      - 'kde-misc/bismuth/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: docker://viperml/gentoo-plasma
+        with:
+          args: echo "$(pwd)" && echo "$(tree)"

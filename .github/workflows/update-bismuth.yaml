@@ -1,5 +1,6 @@
-name: Check for updates on kde-misc/bismuth
+name: Periodic version bump - kde-misc/bismuth
 
+# To change
 on:
   push:
     branches:
