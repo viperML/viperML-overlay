@@ -6,7 +6,7 @@ on:
 jobs:
   run-update:
     runs-on: ubuntu-latest
-    setps:
+    steps:
       - uses: actions/checkout@v2
       - name: Install system dependencies
         run: sudo apt install -y curl jq
