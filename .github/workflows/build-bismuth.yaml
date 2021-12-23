@@ -3,9 +3,7 @@ name: Build check - kde-misc/bismuth
 on:
   pull_request:
     branches:
-      - "**"
-    paths:
-      - 'kde-misc/bismuth/*'
+      - update_kde-misc/bismuth
 
 jobs:
   build_kde-misc_bismuth:

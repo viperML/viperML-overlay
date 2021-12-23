@@ -1,7 +1,9 @@
-name: Periodic version bump - kde-misc/bismuth
+name: Periodic version check - kde-misc/bismuth
 
-# To change
 on:
+  schedule:
+    # Every saturday at night
+    - cron: '20 04 * * SAT'
   push:
     branches:
       - testing
@@ -18,5 +20,7 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           token: ${{ secrets.PAT }}
+          title: kde-misc/bismuth automatic update
           commit-message: kde-misc/bismuth automatic update
           branch: update_kde-misc/bismuth
+          delete-branch: true
