@@ -1,7 +1,9 @@
 name: Check for updates on kde-misc/bismuth
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - testing
 
 jobs:
   run-update:
