@@ -1,6 +1,7 @@
 name: Build check - kde-misc/bismuth
 
 on:
+  workflow_dispatch:
   pull_request:
     branches:
       - "**"
