@@ -21,6 +21,6 @@ Feel free to submit pull requests to improve this overlay.
 ## Installation
 
 ```
-# eselect-repository enable viperML-overlay
-# emerge --sync viperML-overlay
+# eselect repository enable viperML-overlay
+# emaint sync -r viperML-overlay
 ```
