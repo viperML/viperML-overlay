@@ -1,3 +1,7 @@
+# Deprecated
+
+I don't use Gentoo anymore, so this overlay is not maintained. Feel free to relocate any ebuild from here to your own overlay.
+
 <h1 align="center">viperML-overlay</h1>
 
 <p align="center">
